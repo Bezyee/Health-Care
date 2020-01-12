@@ -1,0 +1,57 @@
+{{ define "remove_event.layout" }}
+
+{{template "navbar" . }}
+{{ template "remove_event.content" . }}
+
+{{ end }}
+
+{{ define "remove_event.content" }}
+
+<body>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center"><img src="assets/img/Screenshot%20(148).png">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Online Ticket Store</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 offset-md-10"><button class="btn btn-primary" type="button">Home</button></div>
+                <div class="col-md-12"><small>Event Name &nbsp;&nbsp;</small><input type="text"></div>
+            </div><BR>
+            <div class="row">
+                <div class="col-md-6"><small>Event Type &nbsp; &nbsp;&nbsp;</small><input type="search"></div><br>
+                <div class="col-md-6"><input type="search"><br>
+                    <div class="btn-group"><button class="btn btn-primary" type="button">Search</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false" type="button"></button>
+                        <div class="dropdown-menu" role="menu">
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1"><label class="form-check-label" for="formCheck-1">Name</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2"><label class="form-check-label" for="formCheck-2">Type</label></div>
+                            <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-3"><label class="form-check-label" for="formCheck-3">Date</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"><input type="search"><button class="btn btn-primary" type="button">Search</button></div><BR>
+                <form action="/confirm" method="POST" enctype="multipart/form-data">
+                <input type="submit" value="CONFIRM">
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+{{ end }}
