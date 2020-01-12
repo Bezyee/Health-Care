@@ -1,0 +1,53 @@
+{{ define "manage_event.layout" }}
+
+{{template "navbar" . }}
+{{ template "manage_event.content" . }}
+
+{{ end }}
+{{ define "manage_event.content" }}
+<body>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center"><img src="assets/img/logo.png">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Online Ticket Store</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="btn-group"><button class="btn btn-primary" type="button">Manage Events</button><button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false" type="button"></button><br>
+                    <div class="dropdown-menu" role="menu"><a href="Add_event.html">Add Events</a><a class="dropdown-item" role="presentation" href="#"></a><a href="Remove_event.html">Remove Events</a></div><br>
+                    
+                </div>
+            </div>
+            <div class="col"><button class="btn btn-primary" type="button">Settings</button></div><br>
+            <div class="col-md-5"><input type="search"><button class="btn btn-primary" type="button">Go</button></div>
+        </div>
+    </div>
+    <div class="contact-clean">
+        <form method="post">
+            <div class="form-group">
+                <div class="col offset-md-9">
+                    <div class="btn-group" role="group"><button class="btn btn-primary" type="button">Logout</button></div><br>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="input-group">
+        <div class="input-group-prepend"></div>
+        <div class="input-group-append"></div>
+    </div>
+    <fieldset></fieldset>
+    <div class="btn-group" role="group"></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+{{ end }}
