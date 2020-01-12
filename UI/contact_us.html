@@ -1,0 +1,51 @@
+{{ define "contact_us.layout" }}
+
+{{template "navbar" . }}
+{{ template "contact_us.content" . }}
+
+{{ end }}
+{{ define "contact_us.content" }}
+
+<body>
+    <div class="article-clean">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2">
+                    <div class="intro">
+                        <h1 class="text-center"><img src="assets/img/Screenshot%20(148).png">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Online Ticket Store</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="row">
+                <form action="/confirm" method="POST" enctype="multipart/form-data">
+                    <input type="submit" value="HOME">
+                    </form> <br>
+                <form action="/confirm" method="POST" enctype="multipart/form-data">
+                    <input type="submit" value="EVENTS">
+                    </form> <br>
+                <form action="/confirm" method="POST" enctype="multipart/form-data">
+                    <input type="submit" value="ABOUT US">
+                    </form>  <br>
+                <form action="/confirm" method="POST" enctype="multipart/form-data">
+                    <input type="submit" value="CONTACT_US">
+                    </form>  <br>        
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="col-md-12"><small>EMAIL &nbsp; &nbsp;</small><input type="text"></div><br>
+    <div class="col-md-12"><small>PASSWORD &nbsp; &nbsp;</small><input type="text"></div><br>
+    <form action="/confirm" method="POST" enctype="multipart/form-data">
+        <input type="submit" value="LOG IN"><br>
+        </form> 
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+{{ end }}
