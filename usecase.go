@@ -2,8 +2,8 @@ package order
 
 import "github.com/Bezyee/Online-ticket-store/entity"
 
-// OrderRepository specifies customer menu order related database operations
-type OrderRepository interface {
+//OrderService specifies customer menu order related services
+type OrderService interface {
 	Orders() ([]entity.Order, []error)
 	Order(id uint) (*entity.Order, []error)
 	CustomerOrders(customer *entity.User) ([]entity.Order, []error)

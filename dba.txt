@@ -1,0 +1,5 @@
+new database connection
+username sys
+password Oracle_1
+role sysdba
+sid orcl

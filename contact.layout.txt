@@ -1,0 +1,5 @@
+{{ define "contact.layout" }}
+    {{ template "navbar" . }}
+    {{template "index.content".}}
+    {{ template "footer" . }}
+{{ end }}
